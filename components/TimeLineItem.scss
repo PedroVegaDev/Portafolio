@@ -1,0 +1,37 @@
+.timeLineItem {
+  padding-top: 10px;
+  padding-left: 40px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    left: 0;
+    top: 16px;
+    content: '';
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+
+  &__date {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: $primary-color;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.tabContent {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__timeLine {
+    position: relative;
+
+    &::before {
+      top: 0;
+      left: 5px;
+      width: 1px;
+      content: '';
+      height: 100%;
+      position: absolute;
+      background-color: $primary-color;
+    }
+  }
+}

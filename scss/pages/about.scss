@@ -1,0 +1,131 @@
+.p-about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__contentTitle {
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+
+  &__imgContent {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+  }
+
+  &__imgBox {
+    padding: 30px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid $white-alpha-40;
+    background-color: $white-alpha-25;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__textContainer {
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__titleSkills {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__skillItem {
+    padding: 5px 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 1px solid $white-alpha-40;
+    background-color: $white-alpha-25;
+  }
+
+  &__tabs {
+    margin-top: 20px;
+  }
+
+  &__tabItem {
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 2px;
+    font-weight: 500;
+    color: $text-color;
+    position: relative;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: all 0.3 ease;
+    text-transform: capitalize;
+    background-color: transparent;
+
+    &.active {
+      opacity: 1;
+      cursor: auto;
+      color: $primary-color;
+
+      &::before {
+        width: 100%;
+        background-color: $primary-color;
+      }
+    }
+
+    &:first-child {
+      margin-right: 30px;
+    }
+
+    &::before {
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      content: '';
+      position: absolute;
+      transition: width 0.3s ease;
+      background-color: $text-color;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    user-select: none;
+
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+}

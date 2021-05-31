@@ -1,0 +1,55 @@
+@import 'base';
+
+.container {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 10px 28px;
+  position: relative;
+  border-radius: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  color: $primary-color;
+  transition: color 0.3 ease;
+  text-transform: capitalize;
+  border: 1px solid $white-alpha-40;
+  background-color: $white-alpha-25;
+}
+
+.btn::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  content: '';
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  transition: width 0.3s ease;
+  background-color: $primary-color;
+}
+
+.btn:hover {
+  color: $white;
+}
+
+.btn:hover:before {
+  width: 100%;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

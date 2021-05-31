@@ -1,0 +1,26 @@
+.p-portfolio {
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.--cards {
+      justify-content: center;
+    }
+  }
+
+  &__contentTitle {
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+}

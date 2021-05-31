@@ -1,0 +1,58 @@
+{
+  "proyects": [
+    {
+      "name": "Code Blog",
+      "thumbnail": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_400/v1617067942/portafolio/proyect1_akqeao.png",
+      "image": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_900/v1617067942/portafolio/proyect1_akqeao.png",
+      "description": "Un simple blog de código",
+      "repositorie": "https://github.com/PedroAngelVD/Code-Blog",
+      "tech": "React, Gatsby",
+      "url": "https://code-blog.pages.dev/"
+    },
+    {
+      "name": "Portafolio",
+      "thumbnail": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_400/v1622158751/portafolio/proyect6_zahhwo.png",
+      "image": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_900/v1622158751/portafolio/proyect6_zahhwo.png",
+      "description": "",
+      "repositorie": "",
+      "tech": "",
+      "url": "/"
+    },
+    {
+      "name": "Musical Space",
+      "thumbnail": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_400/v1617067941/portafolio/proyect3_j9lfqu.png",
+      "image": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_900/v1617067941/portafolio/proyect3_j9lfqu.png",
+      "description": "Aplicación web para guardar tus canciones 🎼 favoritas y poder escucharlas 🔊 cuando quieras.",
+      "repositorie": "https://github.com/PedroAngelVD/app-musical-space",
+      "tech": "Vue CLI, Vuex, Firebase",
+      "url": "https://pavd-musical-space.netlify.app"
+    },
+    {
+      "name": "Pizza Web",
+      "thumbnail": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_400/v1617067940/portafolio/proyect2_z86fcn.png",
+      "image": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_900/v1617067940/portafolio/proyect2_z86fcn.png",
+      "description": "Página web de una pizzería",
+      "repositorie": "https://github.com/PedroAngelVD/maquetacion-pizza-web",
+      "tech": "Next.js, Sass, React, React-icons",
+      "url": "https://pizza-web.vercel.app/"
+    },
+    {
+      "name": "Contactos App",
+      "thumbnail": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_400/v1617067941/portafolio/proyect5_tx3qdi.png",
+      "image": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_900/v1617067941/portafolio/proyect5_tx3qdi.png",
+      "description": "Aplicación que te ayudará a guardar 💾 una lista de contactos💻.",
+      "repositorie": "https://github.com/PedroAngelVD/app-contactos",
+      "tech": "React, Bootstrap, Firebase",
+      "url": "https://pavd-contactos-app.netlify.app"
+    },
+    {
+      "name": "Reto FractalUp",
+      "thumbnail": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_400/v1617067940/portafolio/proyect4_tts6hm.png",
+      "image": "https://res.cloudinary.com/pavd-images/image/upload/c_scale,w_900/v1617067940/portafolio/proyect4_tts6hm.png",
+      "description": "Aplicación web para reproducir clips de podcasts de la API Rest de AudioBoom",
+      "repositorie": "https://github.com/PedroAngelVD/app-fractalup-reto-02",
+      "tech": "Vue CLI, Vuex",
+      "url": "https://pavd-fractalup-reto02.netlify.app"
+    }
+  ]
+}
