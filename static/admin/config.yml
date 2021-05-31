@@ -18,7 +18,9 @@ collections:
         fields:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Skills', name: 'skills', widget: 'string' }
-          - { label: 'Education', name: 'education', widget: 'list', 
+          - label: 'Education'
+            name: 'education'
+            widget: 'list'
               fields: 
                 - { label: 'ID', name: 'id', widget: 'string' }
                 - { label: 'Date', name: 'date', widget: 'string' } 
