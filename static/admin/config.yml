@@ -26,7 +26,6 @@ collections:
         editor:
           preview: true
         widget: 'list'
-        summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
           - {
               label: Quote,
@@ -40,3 +39,8 @@ collections:
             fields:
               - { label: Name, name: name, widget: string, default: 'Emmet' }
               - { label: LastName, name: lastname, widget: string }
+          - label: Books
+            name: books
+            widget: list
+            allow_add: true
+            default: ['news']
