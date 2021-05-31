@@ -20,6 +20,11 @@ collections:
           - { label: 'Skills', name: 'skills', widget: 'string' }
       - label: 'Testimonials'
         name: 'testimonials'
+        extension: 'json'
+        file: 'content/testimonials_test.json'
+        create: true
+        editor:
+          preview: true
         widget: 'list'
         summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
