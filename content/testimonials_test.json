@@ -3,5 +3,13 @@
   "author": {
     "name": "Diego Angel",
     "lastname": "Lopez Duna"
-  }
+  },
+  "books": [
+    {
+      "title": "Libro primero"
+    },
+    {
+      "title": "Libro segundo"
+    }
+  ]
 }
