@@ -5,13 +5,15 @@ backend:
 media_folder: static/images
 public_folder: /images
 collections:
-  - name: 'about'
-    label: 'About'
-    extension: 'json'
-    file: 'src/content/about_test.json'
-    create: true
-    editor:
-      preview: true
-    fields:
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Skills', name: 'skills', widget: 'string' }
+  - label: "Pages"
+    name: 'pages'
+    - label: 'About'
+      name: 'about'
+      extension: 'json'
+      file: 'content/about_test.json'
+      create: true
+      editor:
+        preview: true
+      fields:
+        - { label: 'Description', name: 'description', widget: 'string' }
+        - { label: 'Skills', name: 'skills', widget: 'string' }
