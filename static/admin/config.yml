@@ -18,13 +18,20 @@ collections:
         fields:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Skills', name: 'skills', widget: 'string' }
-          - label: 'Education'
-            name: 'education'
-            widget: 'list'
-              fields: 
-                - { label: 'ID', name: 'id', widget: 'string' }
-                - { label: 'Date', name: 'date', widget: 'string' } 
-                - { label: 'Info', name: 'info', widget: 'string' } 
-                - { label: 'Entity', name: 'entity', widget: 'string' } 
-                - { label: 'Description', name: 'description', widget: 'string' } 
+      - label: 'Testimonials'
+        name: 'testimonials'
+        widget: 'list'
+        summary: '{{fields.quote}} - {{fields.author.name}}'
+        fields:
+          - {
+              label: Quote,
+              name: quote,
+              widget: string,
+              default: 'Everything is awesome!'
             }
+          - label: Author
+            name: author
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string, default: 'Emmet' }
+              - { label: LastName, name: lastname, widget: string }
