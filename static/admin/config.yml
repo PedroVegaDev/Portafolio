@@ -42,5 +42,4 @@ collections:
           - label: Books
             name: books
             widget: list
-            allow_add: true
-            default: ['news']
+            fields: [{ name: title, label: title, widget: string }]
