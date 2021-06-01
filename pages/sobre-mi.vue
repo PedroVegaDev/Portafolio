@@ -55,7 +55,7 @@
           <a
             target="_blank"
             class="btn p-about__button"
-            href="/curriculum-vitae.pdf"
+            href="/CV-Vega-Damian-Pedro-Angel.pdf"
             >Descargar CV</a
           >
           <nuxt-link to="/contacto" class="btn p-about__button"
