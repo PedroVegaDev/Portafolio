@@ -28,7 +28,6 @@ collections:
           - label: Education
             name: education
             widget: list
-            summary: '{{fields.info - fields.entity}}'
             fields:
               [
                 { label: Date, name: date, widget: string },
@@ -39,7 +38,6 @@ collections:
           - label: Experience
             name: experience
             widget: list
-            summary: '{{fields.info - fields.entity}}'
             fields:
               [
                 { label: Date, name: date, widget: string },
@@ -59,12 +57,11 @@ collections:
           - label: Proyects
             name: proyects
             widget: list
-            summary: '{{fields.name}}'
             fields:
               [
                 { label: Name, name: name, widget: string },
-                { label: Thumbnail, name: thumbnail, widget: string },
-                { label: Image, name: image, widget: string },
+                { label: Thumbnail, name: thumbnail, widget: image },
+                { label: Image, name: image, widget: image },
                 { label: Description, name: description, widget: string },
                 { label: Repositorie, name: repositorie, widget: string },
                 { label: Tech, name: tech, widget: string },
