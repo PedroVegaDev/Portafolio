@@ -2,9 +2,9 @@
   <div class="tabContent">
     <div class="tabContent__timeLine">
       <TimeLineItem
-        v-for="dataItem of data"
-        :key="dataItem.id"
+        :key="index"
         :dataItem="dataItem"
+        v-for="(dataItem, index) of data"
       />
     </div>
   </div>

@@ -18,7 +18,11 @@ collections:
         widget: 'list'
         fields:
           - { label: 'Description', name: 'description', widget: 'string' }
-          - { label: 'Skills', name: 'skills', widget: 'string' }
+          - label: Skills
+            name: skills
+            widget: list
+            summary: '{{fields.skills}}'
+            field: { label: Skills, name: skills, widget: string }
           - label: Education
             name: education
             widget: list

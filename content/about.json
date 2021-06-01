@@ -3,14 +3,12 @@
   "skills": "html, css, javascript, vue, node, react, nuxt, next, mongodb, mysql, java, cobol",
   "education": [
     {
-      "id": "1",
       "date": "2011 - 2015",
       "info": "Secundaria",
       "entity": "Colegio Fe y Alegría N° 29",
       "description": "Secundaria Completa"
     },
     {
-      "id": "2",
       "date": "2017 - 2020",
       "info": "Carrera Técnica",
       "entity": "IDAT",
@@ -19,7 +17,6 @@
   ],
   "experience": [
     {
-      "id": "1",
       "date": "Octubre 2020 - Diciembre 2020",
       "info": "Desarrollador Front End",
       "entity": "FractalUp",
