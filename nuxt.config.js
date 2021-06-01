@@ -15,9 +15,9 @@ export default {
         content: 'Portafolio de Pedro Vega'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-    link: [{ rel: 'preconnect', href: 'https://fonts.gstatic.com' }],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
@@ -56,9 +56,8 @@ export default {
 
   pwa: {
     manifest: {
-      lang: 'en'
-    },
-    icon: false
+      lang: 'es'
+    }
   },
 
   content: {},

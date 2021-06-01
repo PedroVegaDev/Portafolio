@@ -24,7 +24,7 @@
           <div class="p-about__skills">
             <div
               class="p-about__skillItem"
-              v-for="skill of aboutPage.skills.split(', ')"
+              v-for="skill of aboutPage.skills"
               :key="skill"
             >
               {{ skill }}
