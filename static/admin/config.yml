@@ -15,31 +15,27 @@ collections:
         create: true
         editor:
           preview: true
+        widget: 'list'
         fields:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Skills', name: 'skills', widget: 'string' }
-      - label: 'Testimonials'
-        name: 'testimonials'
-        extension: 'json'
-        file: 'content/testimonials_test.json'
-        create: true
-        editor:
-          preview: true
-        widget: 'list'
-        fields:
-          - {
-              label: Quote,
-              name: quote,
-              widget: string,
-              default: 'Everything is awesome!'
-            }
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - { label: Name, name: name, widget: string, default: 'Emmet' }
-              - { label: LastName, name: lastname, widget: string }
-          - label: Books
-            name: books
+          - label: Education
+            name: education
             widget: list
-            fields: [{ name: title, label: title, widget: string }]
+            fields:
+              [
+                { name: Date, label: date, widget: string },
+                { name: Info, label: info, widget: string },
+                { name: Entity, label: entity, widget: string },
+                { name: Description, label: description, widget: string }
+              ]
+          - label: Experience
+            name: experience
+            widget: list
+            fields:
+              [
+                { name: Date, label: date, widget: string },
+                { name: Info, label: info, widget: string },
+                { name: Entity, label: entity, widget: string },
+                { name: Description, label: description, widget: string }
+              ]
