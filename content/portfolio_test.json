@@ -1,0 +1,13 @@
+{
+  "proyects": [
+    {
+      "name": "Code Blog",
+      "thumbnail": "/images/proyect1_w400.png",
+      "image": "/images/proyect1_w900.png",
+      "description": "Un simple blog de código",
+      "repositorie": "https://github.com/PedroAngelVD/Code-Blog",
+      "tech": "React, Gatsby",
+      "url": "https://code-blog.pages.dev/"
+    }
+  ]
+}
