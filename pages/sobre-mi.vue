@@ -11,7 +11,7 @@
           <div class="p-about__imgBox">
             <img
               class="p-about__img"
-              src="images/profile-img.png"
+              src="/images/profile-img.png"
               alt="about img"
             />
           </div>

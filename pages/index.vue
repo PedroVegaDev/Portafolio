@@ -18,7 +18,7 @@
             <img
               alt="profile-img"
               class="p-home__image"
-              src="images/profile-img.png"
+              src="/images/profile-img.png"
             />
           </div>
         </div>
