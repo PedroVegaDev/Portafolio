@@ -65,8 +65,8 @@ collections:
                 { label: Name, name: name, widget: string },
                 { label: Thumbnail, name: thumbnail, widget: string },
                 { label: Image, name: image, widget: string },
-                { label: Description, name: description, widget: string }
-                { label: Repositorie, name: repositorie, widget: string }
-                { label: Tech, name: tech, widget: string }
+                { label: Description, name: description, widget: string },
+                { label: Repositorie, name: repositorie, widget: string },
+                { label: Tech, name: tech, widget: string },
                 { label: Url, name: url, widget: string }
               ]
