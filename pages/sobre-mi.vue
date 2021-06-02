@@ -9,11 +9,7 @@
       <div class="p-about__row">
         <div class="p-about__imgContent">
           <div class="p-about__imgBox">
-            <img
-              class="p-about__img"
-              src="/images/profile-img.png"
-              alt="about img"
-            />
+            <img class="p-about__img" src="/images/hey.png" alt="about img" />
           </div>
         </div>
         <div class="p-about__textContainer">
@@ -52,15 +48,17 @@
             :data="aboutPage.experience"
           />
 
-          <a
-            target="_blank"
-            class="btn p-about__button"
-            href="/CV-Vega-Damian-Pedro-Angel.pdf"
-            >Descargar CV</a
-          >
-          <nuxt-link to="/contacto" class="btn p-about__button"
-            >Contáctame</nuxt-link
-          >
+          <div class="p-about__buttons">
+            <a
+              target="_blank"
+              class="btn p-about__button"
+              href="/CV-Vega-Damian-Pedro-Angel.pdf"
+              >Descargar CV</a
+            >
+            <nuxt-link to="/contacto" class="btn p-about__button"
+              >Contáctame</nuxt-link
+            >
+          </div>
         </div>
       </div>
     </div>

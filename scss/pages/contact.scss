@@ -2,9 +2,24 @@
   padding-top: 80px;
   padding-bottom: 80px;
 
+  &__alert {
+    padding: 20px;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid $white;
+    background-color: $white-alpha-25;
+  }
+
   &__row {
     display: flex;
     flex-wrap: wrap;
+
+    &:not(.--form) {
+      @media screen and (max-width: 920px) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   &__contentTitle {
@@ -25,6 +40,10 @@
     width: 50%;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
   }
 
   &__inputGroup {
@@ -64,6 +83,15 @@
     }
   }
 
+  &__sendButton {
+    width: 100%;
+
+    @media screen and (max-width: 920px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__infoItem {
     padding-left: 20px;
     margin-bottom: 30px;
@@ -72,6 +100,10 @@
       font-size: 20px;
       margin-bottom: 5px;
       text-transform: capitalize;
+    }
+
+    p > a {
+      color: $primary-color;
     }
   }
 

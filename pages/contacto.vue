@@ -9,7 +9,7 @@
       <div class="p-contact__row">
         <div class="p-contact__containerForm">
           <form @submit.prevent="submitForm">
-            <div class="p-contact__row">
+            <div class="p-contact__row --form">
               <div class="p-contact__inputGroup">
                 <input
                   type="text"
@@ -17,15 +17,17 @@
                   placeholder="Nombre"
                   class="p-contact__inputControl"
                   required
+                  :disabled="disabledInputs"
                 />
               </div>
               <div class="p-contact__inputGroup">
                 <input
-                  type="text"
+                  type="email"
                   v-model="email"
                   placeholder="Email"
                   class="p-contact__inputControl"
                   required
+                  :disabled="disabledInputs"
                 />
               </div>
               <div class="p-contact__inputGroup">
@@ -35,6 +37,7 @@
                   placeholder="Asunto"
                   class="p-contact__inputControl"
                   required
+                  :disabled="disabledInputs"
                 />
               </div>
               <div class="p-contact__inputGroup">
@@ -43,22 +46,41 @@
                   placeholder="Mensaje"
                   class="p-contact__inputControl --textArea"
                   required
+                  :disabled="disabledInputs"
                 ></textarea>
               </div>
-              <div>
-                <button type="submit" class="btn">Enviar Mensaje</button>
+              <div class="p-contact__sendButton">
+                <button
+                  type="submit"
+                  :disabled="disabledInputs"
+                  :class="['btn', disabledInputs && 'noHover']"
+                >
+                  {{ disabledInputs ? 'Enviando..' : 'Enviar Mensaje' }}
+                </button>
               </div>
+              <transition name="fade">
+                <span class="p-contact__alert" v-show="alert"
+                  >Gracias por contactarme 😃
+                  <p>Me pondré en contacto contigo lo antes posible ✌</p></span
+                >
+              </transition>
             </div>
           </form>
         </div>
         <div class="p-contact__containerInfo">
           <div class="p-contact__infoItem">
             <h3 class="p-contact__infoItemTitle">Email</h3>
-            <p>pedro.angel.vd@gmail.com</p>
+            <p>
+              <a href="mailto:pedro.angel.vd@gmail.com">
+                pedro.angel.vd@gmail.com
+              </a>
+            </p>
           </div>
           <div class="p-contact__infoItem">
             <h3 class="p-contact__infoItemTitle">Celular</h3>
-            <p>979 188 529</p>
+            <p>
+              <a href="tel:+51979188529">+51 979 188 529 </a>
+            </p>
           </div>
           <div class="p-contact__infoItem">
             <h3 class="p-contact__infoItemTitle">Redes Sociales</h3>
@@ -124,6 +146,8 @@ export default {
       email: '',
       affair: '',
       message: '',
+      alert: false,
+      disabledInputs: false,
       endPoint: 'https://submit-form.com/qHfbWlMD'
     }
   },
@@ -134,6 +158,8 @@ export default {
         email: this.email,
         message: this.message
       }
+
+      this.disabledInputs = true
 
       const response = await fetch(this.endPoint, {
         method: 'POST',
@@ -149,7 +175,14 @@ export default {
         this.email = ''
         this.affair = ''
         this.message = ''
-        alert('mensaje entregado')
+        this.disabledInputs = false
+        this.alert = true
+        setTimeout(() => {
+          this.alert = false
+        }, 3000)
+      } else {
+        alert('mensaje no entregado')
+        this.disabledInputs = false
       }
     }
   }

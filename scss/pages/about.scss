@@ -5,6 +5,10 @@
   &__row {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
+    }
   }
 
   &__contentTitle {
@@ -27,16 +31,44 @@
     padding-left: 15px;
     padding-right: 15px;
     justify-content: center;
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__imgBox {
-    padding: 30px;
+    overflow: hidden;
     max-width: 380px;
     margin-left: auto;
+    position: relative;
     margin-right: auto;
     border-radius: 10px;
     border: 1px solid $white-alpha-40;
     background-color: $white-alpha-25;
+  }
+
+  &__textImg {
+    top: 100px;
+    right: 40px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    border-radius: 5px;
+    background-color: $white-alpha-25;
+
+    &::after {
+      left: -30px;
+      bottom: 20%;
+      content: '';
+      position: absolute;
+      border-top: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid $white-alpha-25;
+    }
   }
 
   &__img {
@@ -47,6 +79,10 @@
     width: 60%;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
   }
 
   &__titleSkills {
@@ -121,11 +157,27 @@
     }
   }
 
+  &__buttons {
+    @media screen and (max-width: 420px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__button {
     user-select: none;
 
     &:last-child {
       margin-left: 15px;
+
+      @media screen and (max-width: 420px) {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      text-align: center;
     }
   }
 }

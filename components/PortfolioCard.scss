@@ -1,6 +1,6 @@
 .portfolioCard {
   margin: 10px;
-  min-width: 240px;
+  min-width: 270px;
   width: calc((100% / 3) - 30px);
 
   &__thumbnail {
@@ -13,12 +13,12 @@
   &__containerImage {
     width: 100%;
     overflow: hidden;
+    border-radius: 10px;
   }
 
   &__image {
     width: 100%;
     cursor: pointer;
-    border-radius: 10px;
     transition: transform 0.3s;
 
     &:hover {

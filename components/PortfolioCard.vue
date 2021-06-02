@@ -1,7 +1,7 @@
 <template>
   <div class="portfolioCard">
     <div class="portfolioCard__thumbnail">
-      <div class="portfolioCard__containerImage">
+      <div class="portfolioCard__containerImage" @click="togglePopup(proyect)">
         <img
           class="portfolioCard__image"
           :src="proyect.thumbnail"

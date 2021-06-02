@@ -27,8 +27,6 @@ export default {
 
   css: ['~/assets/scss/variables.scss'],
 
-  plugins: [],
-
   components: true,
 
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/fontawesome'],
@@ -55,12 +53,15 @@ export default {
   },
 
   pwa: {
+    meta: {
+      author: 'PedroAngelVD',
+      title: 'Portafolio de Pedro Vega'
+    },
     manifest: {
-      lang: 'es'
+      lang: 'es',
+      theme_color: '#781ae4',
+      name: 'Portafolio de Pedro Vega',
+      short_name: 'Portafolio de Pedro Vega'
     }
-  },
-
-  content: {},
-
-  build: {}
+  }
 }

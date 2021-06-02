@@ -8,21 +8,45 @@
   &__imageContainer {
     width: 50%;
     padding: 15px;
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
   }
 
   &__content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @media screen and (max-width: 920px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__textPresentation {
     font-size: 18px;
+
+    @media screen and (max-width: 920px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 460px) {
+      font-size: 1rem;
+    }
   }
 
   &__textName {
     font-size: 50px;
     text-transform: capitalize;
+
+    @media screen and (max-width: 920px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 460px) {
+      font-size: 2.5rem;
+    }
   }
 
   &__textTitle {
@@ -30,20 +54,41 @@
     font-weight: 300;
     margin-bottom: 30px;
     text-transform: capitalize;
+
+    @media screen and (max-width: 920px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 460px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__buttons {
+    @media screen and (max-width: 920px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__button {
     &:last-child {
       margin-left: 15px;
     }
+
+    @media screen and (max-width: 460px) {
+      font-size: 12px;
+      padding: 10px 20px;
+    }
   }
 
   &__imageBox {
     display: flex;
+    overflow: hidden;
+    max-width: 280px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    max-width: fit-content;
     justify-content: center;
     background-color: $white-alpha-25;
     border: 0.5rem solid $white-alpha-25;
