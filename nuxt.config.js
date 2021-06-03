@@ -1,6 +1,10 @@
 export default {
   target: 'static',
 
+  generate: {
+    fallback: true
+  },
+
   head: {
     titleTemplate: '%s - Pedro Vega',
     htmlAttrs: {
