@@ -5,7 +5,7 @@
       "thumbnail": "/images/proyect1_w400.png",
       "image": "/images/proyect1_w900.png",
       "description": "Un simple blog de código",
-      "repositorie": "https://github.com/PedroAngelVD/Code-Blog",
+      "repositorie": "https://github.com/PedroAngelDev/Code-Blog",
       "tech": "React, Gatsby",
       "url": "https://code-blog.pages.dev/"
     },
@@ -14,25 +14,25 @@
       "thumbnail": "/images/proyect2_w400.png",
       "image": "/images/proyect2_w900.png",
       "description": "Mi portafolio personal",
-      "repositorie": "https://github.com/PedroAngelVD/Portafolio",
+      "repositorie": "https://github.com/PedroAngelDev/Portafolio",
       "tech": "Vue, Nuxt, Sass",
       "url": "https://pedrovega.netlify.app/"
     },
     {
       "name": "Musical Space",
-      "thumbnail": "/images/proyect3_w400.png",
-      "image": "/images/proyect3_w900.png",
-      "description": "Aplicación web para guardar tus canciones 🎼 favoritas y poder escucharlas 🔊 cuando quieras.",
-      "repositorie": "https://github.com/PedroAngelVD/app-musical-space",
-      "tech": "Vue CLI, Vuex, Firebase",
-      "url": "https://pavd-musical-space.netlify.app"
+      "thumbnail": "/images/musical-space_w400.png",
+      "image": "/images/musical-space_w900.png",
+      "description": "Reproductor de canciones 🎼 para poder escucharlas 🔊 cuando quieras.",
+      "repositorie": "https://github.com/PedroAngelDev/Musical-Space",
+      "tech": "Vue, Typescript, Vite, Pinia, Firebase",
+      "url": "https://musical-space.vercel.app"
     },
     {
       "name": "Pizza Web",
       "thumbnail": "/images/proyect4_w400.png",
       "image": "/images/proyect4_w900.png",
       "description": "Página web de una pizzería",
-      "repositorie": "https://github.com/PedroAngelVD/maquetacion-pizza-web",
+      "repositorie": "https://github.com/PedroAngelDev/maquetacion-pizza-web",
       "tech": "Next.js, Sass, React, React-icons",
       "url": "https://pizza-web.vercel.app/"
     },
@@ -41,7 +41,7 @@
       "thumbnail": "/images/proyect5_w400.png",
       "image": "/images/proyect5_w900.png",
       "description": "Aplicación que te ayudará a guardar 💾 una lista de contactos💻.",
-      "repositorie": "https://github.com/PedroAngelVD/app-contactos",
+      "repositorie": "https://github.com/PedroAngelDev/app-contactos",
       "tech": "React, Bootstrap, Firebase",
       "url": "https://pavd-contactos-app.netlify.app"
     },
@@ -50,7 +50,7 @@
       "thumbnail": "/images/proyect6_w400.png",
       "image": "/images/proyect6_w900.png",
       "description": "Aplicación web para reproducir clips de podcasts de la API Rest de AudioBoom",
-      "repositorie": "https://github.com/PedroAngelVD/app-fractalup-reto-02",
+      "repositorie": "https://github.com/PedroAngelDev/app-fractalup-reto-02",
       "tech": "Vue CLI, Vuex",
       "url": "https://pavd-fractalup-reto02.netlify.app"
     }
