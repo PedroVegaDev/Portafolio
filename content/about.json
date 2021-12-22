@@ -4,6 +4,7 @@
     "html",
     "css",
     "javascript",
+    "typescript",
     "sass",
     "firebase",
     "vue",
@@ -26,6 +27,12 @@
       "info": "Carrera Técnica",
       "entity": "IDAT",
       "description": "Egresado (Desarrollo de Sistemas de la Información)"
+    },
+    {
+      "date": "Abril 2021 - Agosto 2021",
+      "info": "Diplomado Front End",
+      "entity": "Idat",
+      "description": "Certificado Front End"
     }
   ],
   "experience": [
@@ -34,6 +41,12 @@
       "info": "Desarrollador Front End",
       "entity": "FractalUp",
       "description": "Desempeñe el rol de Front End Junior donde integraba diferentes features, módulos y refactorizaba código."
+    },
+    {
+      "date": "Julio 2021 - Diciembre 2021",
+      "info": "Desarrollador Front End",
+      "entity": "Wunderman Thompson",
+      "description": "Como Front End resolví distintas tareas, ayudé a la refactorización de código legacy e implementaba constantemente nuevos diseños a través de la maquetación."
     }
   ]
 }
