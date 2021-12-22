@@ -88,19 +88,19 @@
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://www.facebook.com/pedroangelvd"
+                href="https://www.facebook.com/pedroangeldev"
                 ><fa class="icon" :icon="['fab', 'facebook']" title="facebook"
               /></a>
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://twitter.com/PedroAngelVD"
+                href="https://twitter.com/PedroAngelDev"
                 ><fa class="icon" :icon="['fab', 'twitter']" title="twitter"
               /></a>
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://www.instagram.com/pedroangelvd/"
+                href="https://www.instagram.com/pedroangeldev/"
                 ><fa
                   class="icon"
                   :icon="['fab', 'instagram']"
@@ -109,19 +109,19 @@
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://www.linkedin.com/in/pedroangelvd/"
+                href="https://www.linkedin.com/in/pedroangeldev/"
                 ><fa class="icon" :icon="['fab', 'linkedin']" title="linkedin"
               /></a>
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://github.com/PedroAngelVD"
+                href="https://github.com/PedroAngelDev"
                 ><fa class="icon" :icon="['fab', 'github']" title="github"
               /></a>
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://dev.to/pedroangelvd"
+                href="https://dev.to/pedroangeldev"
                 ><fa class="icon" :icon="['fab', 'dev']" title="dev"
               /></a>
             </div>
