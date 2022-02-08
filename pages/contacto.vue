@@ -88,12 +88,6 @@
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://www.facebook.com/pedroangeldev"
-                ><fa class="icon" :icon="['fab', 'facebook']" title="facebook"
-              /></a>
-              <a
-                target="_blank"
-                class="p-contact__socialLink"
                 href="https://twitter.com/PedroAngelDev"
                 ><fa class="icon" :icon="['fab', 'twitter']" title="twitter"
               /></a>
