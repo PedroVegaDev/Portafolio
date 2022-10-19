@@ -71,15 +71,9 @@
           <div class="p-contact__infoItem">
             <h3 class="p-contact__infoItemTitle">Email</h3>
             <p>
-              <a href="mailto:pedro.angel.vd@gmail.com">
-                pedro.angel.vd@gmail.com
+              <a href="mailto:pedrovegadamian@gmail.com">
+                pedrovegadamian@gmail.com
               </a>
-            </p>
-          </div>
-          <div class="p-contact__infoItem">
-            <h3 class="p-contact__infoItemTitle">Celular</h3>
-            <p>
-              <a href="tel:+51979188529">+51 979 188 529 </a>
             </p>
           </div>
           <div class="p-contact__infoItem">
@@ -88,34 +82,19 @@
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://twitter.com/PedroAngelDev"
-                ><fa class="icon" :icon="['fab', 'twitter']" title="twitter"
-              /></a>
-              <a
-                target="_blank"
-                class="p-contact__socialLink"
-                href="https://www.instagram.com/pedroangeldev/"
-                ><fa
-                  class="icon"
-                  :icon="['fab', 'instagram']"
-                  title="instagram"
-              /></a>
-              <a
-                target="_blank"
-                class="p-contact__socialLink"
-                href="https://www.linkedin.com/in/pedroangeldev/"
+                href="https://www.linkedin.com/in/pedrovegadamian/"
                 ><fa class="icon" :icon="['fab', 'linkedin']" title="linkedin"
               /></a>
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://github.com/PedroAngelDev"
+                href="https://github.com/pedrovegadamian"
                 ><fa class="icon" :icon="['fab', 'github']" title="github"
               /></a>
               <a
                 target="_blank"
                 class="p-contact__socialLink"
-                href="https://dev.to/pedroangeldev"
+                href="https://dev.to/pedrovegadamian"
                 ><fa class="icon" :icon="['fab', 'dev']" title="dev"
               /></a>
             </div>
