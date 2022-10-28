@@ -52,7 +52,7 @@
             <a
               target="_blank"
               class="btn p-about__button"
-              href="/Curriculum-Vitae-Pedro-Vega.pdf"
+              href="/CV-PedroVegaDamian.pdf"
               >Descargar CV</a
             >
             <nuxt-link to="/contacto" class="btn p-about__button"
