@@ -1,3 +1,16 @@
+<script setup lang="ts">
+const isOpenMenu = ref(false)
+
+const emit = defineEmits<{
+  (e: 'toggleSection'): void
+}>()
+
+const toggleMenu = () => {
+  emit('toggleSection')
+  isOpenMenu.value = !isOpenMenu.value
+}
+</script>
+
 <template>
   <header class="theHeader">
     <div class="container">
@@ -13,24 +26,22 @@
           <div class="theHeader__navbarInner">
             <ul>
               <li class="theHeader__navbarItem" @click="toggleMenu">
-                <nuxt-link to="/" class="theHeader__navbarLink"
-                  >Inicio</nuxt-link
-                >
+                <NuxtLink to="/" class="theHeader__navbarLink">Inicio</NuxtLink>
               </li>
               <li class="theHeader__navbarItem" @click="toggleMenu">
-                <nuxt-link to="/sobre-mi" class="theHeader__navbarLink"
-                  >Sobre Mí</nuxt-link
-                >
+                <NuxtLink to="/sobre-mi" class="theHeader__navbarLink">
+                  Sobre Mí
+                </NuxtLink>
               </li>
               <li class="theHeader__navbarItem" @click="toggleMenu">
-                <nuxt-link to="/portafolio" class="theHeader__navbarLink"
-                  >Portafolio</nuxt-link
-                >
+                <NuxtLink to="/portafolio" class="theHeader__navbarLink">
+                  Portafolio
+                </NuxtLink>
               </li>
               <li class="theHeader__navbarItem" @click="toggleMenu">
-                <nuxt-link to="/contacto" class="theHeader__navbarLink"
-                  >Contacto</nuxt-link
-                >
+                <NuxtLink to="/contacto" class="theHeader__navbarLink">
+                  Contacto
+                </NuxtLink>
               </li>
             </ul>
           </div>
@@ -40,25 +51,6 @@
   </header>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'TheHeader',
-  data() {
-    return {
-      isOpenMenu: false
-    }
-  },
-  methods: {
-    toggleMenu() {
-      this.$emit('toggleSection')
-      this.isOpenMenu = !this.isOpenMenu
-    }
-  }
-})
-</script>
-
 <style lang="scss" scoped>
-@import './TheHeader.scss';
+@use './TheHeader.scss';
 </style>

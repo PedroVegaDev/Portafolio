@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { DataInfo } from '@/models/DataInfo'
+
+interface Props {
+  dataItem: DataInfo
+}
+
+defineProps<Props>()
+</script>
+
 <template>
   <div class="timeLineItem">
     <span class="timeLineItem__date">{{ dataItem.date }}</span>
@@ -8,21 +18,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue, { PropType } from 'vue'
-import { DataInfo } from '@/models/DataInfo'
-
-export default Vue.extend({
-  name: 'TimeLineItem',
-  props: {
-    dataItem: {
-      type: Object as () => PropType<DataInfo>,
-      required: true
-    }
-  }
-})
-</script>
-
 <style lang="scss" scoped>
-@import './TimeLineItem.scss';
+@use './TimeLineItem.scss';
 </style>

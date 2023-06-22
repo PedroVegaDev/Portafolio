@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { DataInfo } from '@/models/DataInfo'
+
+interface Props {
+  data?: DataInfo[]
+}
+
+defineProps<Props>()
+</script>
+
 <template>
   <div class="tabContent">
     <div class="tabContent__timeLine">
@@ -10,21 +20,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue, { PropType } from 'vue'
-import { DataInfo } from '@/models/DataInfo'
-
-export default Vue.extend({
-  name: 'tabContent',
-  props: {
-    data: {
-      type: Array as () => PropType<DataInfo>,
-      required: true
-    }
-  }
-})
-</script>
-
 <style lang="scss" scoped>
-@import './TabContent.scss';
+@use './TabContent.scss';
 </style>
