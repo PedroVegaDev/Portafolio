@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: 'Inicio'
+})
+</script>
+
 <template>
   <section class="p-home">
     <div class="container">
@@ -7,12 +13,12 @@
           <h1 class="p-home__textName">Pedro Vega</h1>
           <h2 class="p-home__textTitle">Desarrollador Front End</h2>
           <div class="p-home__buttons">
-            <nuxt-link to="/sobre-mi" class="btn p-home__button"
-              >Mas Sobre Mí</nuxt-link
-            >
-            <nuxt-link to="/portafolio" class="btn p-home__button"
-              >Portafolio</nuxt-link
-            >
+            <NuxtLink to="/sobre-mi" class="btn p-home__button">
+              Mas Sobre Mí
+            </NuxtLink>
+            <NuxtLink to="/portafolio" class="btn p-home__button">
+              Portafolio
+            </NuxtLink>
           </div>
         </div>
         <div class="p-home__imageContainer">
@@ -29,19 +35,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'Home',
-  head() {
-    return {
-      title: 'Inicio'
-    }
-  }
-})
-</script>
-
 <style lang="scss" scoped>
-@import '../scss/pages/home.scss';
+@use '../scss/pages/home.scss';
 </style>

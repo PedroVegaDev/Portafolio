@@ -1,10 +1,27 @@
+<script setup lang="ts">
+import { Card } from '@/models/CardPortfolio'
+
+interface Props {
+  data: Card
+}
+
+defineProps<Props>()
+const emit = defineEmits<{
+  (e: 'closePopup'): void
+}>()
+
+const closePopup = () => {
+  emit('closePopup')
+}
+</script>
+
 <template>
   <div class="popUp">
     <div class="popUp__inner">
       <div class="popUp__content">
         <div class="popUp__header">
           <button @click="closePopup" class="btn popUp__close">
-            <fa :icon="['fas', 'times']" title="close" />
+            <Icon name="fa-solid:times" title="close" />
           </button>
           <div class="popUp__thumbnail">
             <img
@@ -48,26 +65,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue, { PropType } from 'vue'
-import { Card } from '@/models/CardPortfolio'
-
-export default Vue.extend({
-  name: 'PopUp',
-  props: {
-    data: {
-      type: Object as () => PropType<Card>,
-      required: true
-    }
-  },
-  methods: {
-    closePopup() {
-      this.$emit('closePopup')
-    }
-  }
-})
-</script>
-
 <style lang="scss" scoped>
-@import './PopUp.scss';
+@use './PopUp.scss';
 </style>

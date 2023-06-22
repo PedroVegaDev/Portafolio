@@ -1,3 +1,29 @@
+<script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+
+useHead({
+  title: 'Portafolio'
+})
+
+export interface Proyect {
+  name: string
+  thumbnail: string
+  image: string
+  description: string
+  repositorie: string
+  tech: string
+  url: string
+}
+
+export interface PortfolioContent extends ParsedContent {
+  proyects: Proyect[]
+}
+
+const { data: portfolioPage } = useAsyncData('portfolio', () =>
+  queryContent<PortfolioContent>('/portfolio').findOne()
+)
+</script>
+
 <template>
   <section class="p-portfolio">
     <div class="container">
@@ -10,31 +36,13 @@
         <PortfolioCard
           :proyect="proyect"
           :key="proyect.name"
-          v-for="proyect of portfolioPage.proyects"
+          v-for="proyect of portfolioPage?.proyects"
         />
       </div>
     </div>
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'Portfolio',
-
-  head() {
-    return {
-      title: 'Portafolio'
-    }
-  },
-  async asyncData({ $content }) {
-    const portfolioPage = await $content('portfolio').fetch()
-    return { portfolioPage }
-  }
-})
-</script>
-
 <style lang="scss" scoped>
-@import '../scss/pages/portfolio.scss';
+@use '../scss/pages/portfolio.scss';
 </style>
