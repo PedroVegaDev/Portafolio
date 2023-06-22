@@ -14,18 +14,20 @@ const handleError = () => {
 </script>
 
 <template>
-  <section class="p-error">
-    <div class="container">
-      <h1 class="p-error__title" v-if="props.error?.statusCode === 404">
-        Ooops.. Error 404
-      </h1>
-      <h1 class="p-error__title" v-else>Ha ocurrido un error.. 😥</h1>
-      <h2 class="p-error__subtitle" v-if="props.error?.statusCode === 404">
-        Lo sentimos, pero la página que busca no existe.
-      </h2>
-      <button class="btn" @click="handleError">Volver al Inicio</button>
-    </div>
-  </section>
+  <NuxtLayout>
+    <section class="p-error">
+      <div class="container">
+        <h1 class="p-error__title" v-if="props.error?.statusCode === 404">
+          Ooops.. Error 404
+        </h1>
+        <h1 class="p-error__title" v-else>Ha ocurrido un error.. 😥</h1>
+        <h2 class="p-error__subtitle" v-if="props.error?.statusCode === 404">
+          Lo sentimos, pero la página que busca no existe.
+        </h2>
+        <button class="btn" @click="handleError">Volver al Inicio</button>
+      </div>
+    </section>
+  </NuxtLayout>
 </template>
 
 <style lang="scss" scoped>
