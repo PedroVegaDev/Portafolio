@@ -1,6 +1,5 @@
 export default defineNuxtConfig({
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       htmlAttrs: {
         lang: 'es'
@@ -14,18 +13,20 @@ export default defineNuxtConfig({
           content: 'Portafolio de Pedro Vega'
         }
       ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
-        }
-      ]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/icon.png' }]
     }
   },
-  experimental: {
-    typedPages: true
+  modules: [
+    // '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    'nuxt-icon'
+  ],
+  colorMode: {
+    classSuffix: ''
   },
-  modules: ['nuxt-icon', '@nuxt/content']
+  experimental: {
+    typedPages: true,
+    payloadExtraction: false
+  }
 })
