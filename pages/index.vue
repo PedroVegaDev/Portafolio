@@ -1,40 +1,37 @@
 <script setup lang="ts">
 useHead({
-  title: 'Inicio'
+  title: 'Portafolio - Pedro Vega',
+  htmlAttrs: {
+    class: 'scroll-smooth'
+  },
+  bodyAttrs: {
+    class: 'bg-gray-100 text-zinc-900 dark:bg-zinc-950 dark:text-gray-100'
+  }
 })
+
+const router = useRouter()
+const { isTopScroll } = useTopScroll()
+const goUp = () => {
+  window.scrollTo({
+    top: 0
+  })
+  router.push('/')
+}
 </script>
 
 <template>
-  <section class="p-home">
-    <div class="container">
-      <div class="p-home__content">
-        <div class="p-home__textContent">
-          <p class="p-home__textPresentation">Hola!, Yo soy</p>
-          <h1 class="p-home__textName">Pedro Vega</h1>
-          <h2 class="p-home__textTitle">Desarrollador Front End</h2>
-          <div class="p-home__buttons">
-            <NuxtLink to="/sobre-mi" class="btn p-home__button">
-              Mas Sobre Mí
-            </NuxtLink>
-            <NuxtLink to="/portafolio" class="btn p-home__button">
-              Portafolio
-            </NuxtLink>
-          </div>
-        </div>
-        <div class="p-home__imageContainer">
-          <div class="p-home__imageBox">
-            <img
-              alt="profile-img"
-              class="p-home__image"
-              src="/images/profile-img.png"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main class="max-w-[650px] mx-auto">
+    <TheNavbar />
+    <HeroSection />
+    <AboutSection id="sobre-mi" />
+    <ProyectsSection id="proyectos" />
+    <button
+      class="fixed flex justify-center items-center w-10 h-10 rounded-full bottom-8 right-8 border transition-opacity duration-300"
+      :class="isTopScroll ? 'opacity-0' : ''"
+      @click="goUp"
+      title="Ir arriba"
+    >
+      <Icon name="mdi:arrow-up" />
+    </button>
+  </main>
 </template>
-
-<style lang="scss" scoped>
-@use '../scss/pages/home.scss';
-</style>
