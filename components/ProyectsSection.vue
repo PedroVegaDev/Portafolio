@@ -6,8 +6,8 @@ const proyects = [
     image: '/images/proyect1_w400.png'
   },
   {
-    repository: 'https://github.com/PedroVegaDamian/Portafolio',
-    url: 'https://pedrovega.netlify.app/',
+    repository: 'https://github.com/PedroVegaDamian/travesia-de-sabores',
+    url: 'https://travesia-de-sabores.vercel.app/',
     image: '/images/proyect2_w400.png'
   },
   {
@@ -26,8 +26,8 @@ const proyects = [
     image: '/images/proyect5_w400.png'
   },
   {
-    repository: 'https://github.com/PedroVegaDamian/app-fractalup-reto-02',
-    url: 'https://pavd-fractalup-reto02.netlify.app',
+    repository: 'https://github.com/PedroVegaDamian/test-vue-2',
+    url: 'https://test-vue-2-livid.vercel.app/',
     image: '/images/proyect6_w400.png'
   }
 ]
