@@ -36,6 +36,16 @@
       <p class="mb-4">
         Trabajo con los frameworks
         <span class="inline-block">
+          <Icon name="logos:react" />
+          React
+        </span>
+        ,
+        <span class="inline-block">
+          <Icon name="logos:nextjs-icon" />
+          Next
+        </span>
+        ,
+        <span class="inline-block">
           <Icon name="logos:vue" />
           Vue
         </span>
