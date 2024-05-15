@@ -21,8 +21,8 @@ const proyects = [
     image: '/images/proyect4_w400.png'
   },
   {
-    repository: 'https://github.com/PedroVegaDamian/app-contactos',
-    url: 'https://pavd-contactos-app.netlify.app',
+    repository: 'https://github.com/PedroVegaDamian/cetpro-naciones-unidas',
+    url: 'https://cetpro-naciones-unidas.vercel.app/',
     image: '/images/proyect5_w400.png'
   },
   {
