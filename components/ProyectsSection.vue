@@ -1,14 +1,9 @@
 <script setup lang="ts">
 const proyects = [
   {
-    repository: 'https://github.com/PedroVegaDamian/Code-Blog',
-    url: 'https://code-blog.pages.dev/',
-    image: '/images/proyect1_w400.png'
-  },
-  {
-    repository: 'https://github.com/PedroVegaDamian/travesia-de-sabores',
-    url: 'https://travesia-de-sabores.vercel.app/',
-    image: '/images/proyect2_w400.png'
+    repository: 'https://github.com/PedroVegaDamian/Orimi',
+    url: 'https://orimi.vercel.app/',
+    image: '/images/proyect6_w400.png'
   },
   {
     repository: 'https://github.com/PedroVegaDamian/Musical-Space',
@@ -21,14 +16,19 @@ const proyects = [
     image: '/images/proyect4_w400.png'
   },
   {
+    repository: 'https://github.com/PedroVegaDamian/travesia-de-sabores',
+    url: 'https://travesia-de-sabores.vercel.app/',
+    image: '/images/proyect2_w400.png'
+  },
+  {
+    repository: 'https://github.com/PedroVegaDamian/Code-Blog',
+    url: 'https://code-blog.pages.dev/',
+    image: '/images/proyect1_w400.png'
+  },
+  {
     repository: 'https://github.com/PedroVegaDamian/cetpro-naciones-unidas',
     url: 'https://cetpro-naciones-unidas.vercel.app/',
     image: '/images/proyect5_w400.png'
-  },
-  {
-    repository: 'https://github.com/PedroVegaDamian/test-vue-2',
-    url: 'https://test-vue-2-livid.vercel.app/',
-    image: '/images/proyect6_w400.png'
   }
 ]
 </script>
