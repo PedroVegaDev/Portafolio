@@ -8,13 +8,13 @@ const sectionLinks = [
 
 const socialLinks = [
   {
-    to: 'https://www.linkedin.com/in/pedrovegadamian',
+    to: 'https://www.linkedin.com/in/pedrovegadev',
     icon: 'devicon:linkedin',
     size: '1.6rem',
     arialLabel: 'linkedin'
   },
   {
-    to: 'https://github.com/PedroVegaDamian',
+    to: 'https://github.com/PedroVegaDev',
     icon: 'mdi:github',
     size: '2rem',
     arialLabel: 'github'
